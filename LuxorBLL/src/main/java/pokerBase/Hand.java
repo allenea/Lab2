@@ -229,9 +229,9 @@ public class Hand {
 			bHandCheck =true;
 			hs.setHandStrength(eHandStrength.FullHouse.getHandStrength());
 			hs.setHiHand(h.getCardsInHand().get(eCardNo.FirstCard.getCardNo()).geteRank().getiRankNbr());
-			hs.setLoHand(h.getCardsInHand().get(eCardNo.FourthCard.getCardNo()).geteRank().getiRankNbr());
+			hs.setLoHand(h.getCardsInHand().get(eCardNo.FifthCard.getCardNo()).geteRank().getiRankNbr());
 			ArrayList<Card> kickers = new ArrayList<Card>();
-			kickers.add(h.getCardsInHand().get(eCardNo.SecondCard.getCardNo()));
+			kickers.add(h.getCardsInHand().get(eCardNo.FourthCard.getCardNo()));
 			hs.setKickers(kickers);
 			
 		} else if ((h.getCardsInHand().get(eCardNo.ThirdCard.getCardNo()).geteRank() == 
@@ -242,9 +242,9 @@ public class Hand {
 				bHandCheck =true;
 				hs.setHandStrength(eHandStrength.FullHouse.getHandStrength());
 				hs.setHiHand(h.getCardsInHand().get(eCardNo.ThirdCard.getCardNo()).geteRank().getiRankNbr());
-				hs.setLoHand(h.getCardsInHand().get(eCardNo.FirstCard.getCardNo()).geteRank().getiRankNbr());
+				hs.setLoHand(h.getCardsInHand().get(eCardNo.FifthCard.getCardNo()).geteRank().getiRankNbr());
 				ArrayList<Card> kickers = new ArrayList<Card>();
-				kickers.add(h.getCardsInHand().get(eCardNo.FourthCard.getCardNo()));
+				kickers.add(h.getCardsInHand().get(eCardNo.FirstCard.getCardNo()));
 				hs.setKickers(kickers);
 		}
 		return bHandCheck;
